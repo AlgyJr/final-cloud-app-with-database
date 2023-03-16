@@ -36,7 +36,7 @@
     </nav>
 
     <div class="container-fluid">
-        {% if grade > 80 %}
+        {% if grade > minimum_to_pass %}
         <div class="alert alert-success">
         <!--HINT Display passed info -->
             <b>Congratulations, {{ user.first_name }}!</b> You have passed the exam and completed the course with score {{ grade }} / {{ total_grade }}
